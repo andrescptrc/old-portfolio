@@ -9,7 +9,7 @@ const TabListItem = ({ text }: TabListItemProps) => {
         <button
           className={classNames(
             { 'bg-indigo-500': selected },
-            'font-bold bg-zinc-800 py-2 px-4 rounded-md text-white'
+            'font-bold bg-zinc-800 py-2 px-4 rounded-md text-white outline-none'
           )}
         >
           {text}
