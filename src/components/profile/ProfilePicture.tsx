@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaEnvelope, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { VscFilePdf } from 'react-icons/vsc';
 
 const ProfilePicture = () => {
   return (
-    <>
+    <div className="col-span-1 lg:col-span-4">
       <div className="mx-4 border-[1px] border-base-100 rounded-lg flex flex-col justify-center items-center py-4 -mt-16 bg-black mb-4">
         <div className="relative">
           <Image
@@ -24,7 +25,7 @@ const ProfilePicture = () => {
         </div>
       </div>
       <div className="mx-4 rounded-lg flex justify-center space-x-8 py-4 text-white border-[1px] border-base-100 mb-4">
-        <Link href="mailto:brandonpaldom@gmail.com" passHref>
+        <Link href="mailto:andrebrayan74@gmail.com" passHref>
           <a
             className="rounded-full p-3 border-[1px] border-base-100 hover:bg-base-100 cursor-pointer"
             target="_blank"
@@ -54,6 +55,15 @@ const ProfilePicture = () => {
             <FaGithubSquare className="w-5 h-5" />
           </a>
         </Link>
+        <Link href="/curriculum/brayan-carreño-resume.pdf" passHref>
+          <a
+            className="rounded-full p-3 border-[1px] border-base-100 hover:bg-base-100 cursor-pointer"
+            download
+            target="_blank"
+          >
+            <VscFilePdf className="w-5 h-5" />
+          </a>
+        </Link>
       </div>
       <div className="mx-4 rounded-lg flex flex-wrap justify-center gap-2 p-4 text-white border-[1px] border-base-100 mb-4">
         <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-indigo-500">
@@ -81,7 +91,7 @@ const ProfilePicture = () => {
           javascript
         </span>
       </div>
-    </>
+    </div>
   );
 };
 

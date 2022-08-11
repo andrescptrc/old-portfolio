@@ -16,8 +16,17 @@ const ProjectPage = () => {
 
   return (
     <MainLayout dontShowTab>
-      <div className="text-white mx-4 rounded-lg p-4 border-[1px] border-zinc-700">
-        <h2 className="text-2xl font-bold mb-4">{title}</h2>
+      <div className="text-white mx-4 rounded-lg p-4 border-[1px] border-zinc-700 col-span-1 lg:col-span-8 lg:-mt-16 bg-black">
+        <div className="flex justify-between items-center">
+          <h2 className="text-2xl font-bold mb-4">{title}</h2>
+          <div>
+            <Link href="/">
+              <a className="border-[1px] border-indigo-500 rounded-lg px-4 py-2 text-indigo-500 hover:bg-indigo-500 hover:text-white">
+                Volver
+              </a>
+            </Link>
+          </div>
+        </div>
         <div className="rounded-lg flex flex-wrap gap-2 text-white mb-4">
           {tags.map((tag, index) => (
             <span
@@ -45,7 +54,7 @@ const ProjectPage = () => {
         <div className="space-y-6">
           {images.map((image, index) => (
             <div
-              className="relative w-full h-64 bg-cover bg-center rounded-lg overflow-hidden"
+              className="relative w-full h-64 lg:h-[550px] bg-cover bg-center rounded-lg overflow-hidden"
               key={`image-${index}`}
             >
               <Image

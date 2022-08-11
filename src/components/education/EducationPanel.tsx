@@ -23,7 +23,6 @@ const EducationPanel = () => {
           </div>
         </div>
         <h2 className="text-2xl font-bold mb-1">Online Education</h2>
-        <p className="text-accent mb-8">Where I&apos;ve Studied</p>
         <div className="flex flex-col gap-6">
           <div className="p-4 border-base-100 flex">
             <div className="relative h-16 w-16 flex-shrink-0 rounded-lg overflow-hidden">

@@ -9,7 +9,7 @@ export const PROJECTS: Record<string, ProjectT> = {
       '/projects/kakaroto-1.png',
       '/projects/kakaroto-2.png'
     ],
-    link: 'https://app.ed.team/'
+    link: 'https://ed.team/'
   },
   soluciones: {
     title: 'SolucionesCloud - CMS',

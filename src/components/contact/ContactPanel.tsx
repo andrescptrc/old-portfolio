@@ -1,4 +1,5 @@
 import { Tab } from '@headlessui/react';
+import Link from 'next/link';
 
 const ContactPanel = () => {
   return (
@@ -10,9 +11,11 @@ const ContactPanel = () => {
           to work with you!
         </p>
         <div className="flex">
-          <button className="border-[1px] border-indigo-500 rounded-lg px-4 py-2 text-indigo-500 hover:bg-indigo-500 hover:text-white">
-            Send me an email
-          </button>
+          <Link href="mailto:andrebrayan74@gmail.com">
+            <a className="border-[1px] border-indigo-500 rounded-lg px-4 py-2 text-indigo-500 hover:bg-indigo-500 hover:text-white">
+              Send me an email
+            </a>
+          </Link>
         </div>
       </div>
     </Tab.Panel>
