@@ -6,9 +6,9 @@ const ProjectsPanel = () => {
     <Tab.Panel className="w-full">
       <div className="w-full">
         <h2 className="text-2xl font-bold mb-1">Projects</h2>
-        <p className="text-accent mb-8">What I've worked on</p>
+        <p className="text-accent mb-8">What I&apos;ve worked on</p>
         <div className="flex flex-col gap-8">
-          <div className="border-[1px] border-base-100 rounded-lg overflow-hidden">
+          <div className="border-[1px] border-base-100 rounded-lg overflow-hidden hover:bg-base-100 cursor-pointer">
             <div className="relative w-full h-64  bg-cover bg-center">
               <Image
                 src="/projects/kakaroto.png"
@@ -23,7 +23,7 @@ const ProjectsPanel = () => {
             </div>
             <h3 className="font-semibold p-4">App - EDTeam</h3>
           </div>
-          <div className="border-[1px] border-base-100 rounded-lg overflow-hidden">
+          <div className="border-[1px] border-base-100 rounded-lg overflow-hidden hover:bg-base-100 cursor-pointer">
             <div className="relative w-full h-64  bg-cover bg-center">
               <Image
                 src="/projects/cloud.png"
@@ -38,7 +38,7 @@ const ProjectsPanel = () => {
             </div>
             <h3 className="font-semibold p-4">SolucionesCloud - CMS</h3>
           </div>
-          <div className="border-[1px] border-base-100 rounded-lg overflow-hidden">
+          <div className="border-[1px] border-base-100 rounded-lg overflow-hidden hover:bg-base-100 cursor-pointer">
             <div className="relative w-full h-64  bg-cover bg-center">
               <Image
                 src="/projects/countries.jpg"
