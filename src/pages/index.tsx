@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { FaEnvelope, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 import TabGroup from '../components/tabs/TabGroup';
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
               width={100}
               height={100}
               className="rounded-full"
+              alt="Brayan Carreño"
             />
           </div>
           <div className="text-center">
@@ -33,39 +35,60 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="mx-4 rounded-lg flex justify-center space-x-8 py-4 text-white border-[1px] border-base-100 mb-4">
-          <div className="rounded-full p-3 border-[1px] border-base-100">
-            <FaEnvelope className="w-5 h-5" />
-          </div>
-          <div className="rounded-full p-3 border-[1px] border-base-100">
-            <FaLinkedin className="w-5 h-5" />
-          </div>
-          <div className="rounded-full p-3 border-[1px] border-base-100">
-            <FaGithubSquare className="w-5 h-5" />
-          </div>
+          <Link href="mailto:brandonpaldom@gmail.com" passHref>
+            <a
+              className="rounded-full p-3 border-[1px] border-base-100 hover:bg-base-100 cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope className="w-5 h-5" />
+            </a>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/brayan-carre%C3%B1o-460b70217/"
+            passHref
+          >
+            <a
+              className="rounded-full p-3 border-[1px] border-base-100 hover:bg-base-100 cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="w-5 h-5" />
+            </a>
+          </Link>
+          <Link href="https://github.com/andrescptrc" passHref>
+            <a
+              className="rounded-full p-3 border-[1px] border-base-100 hover:bg-base-100 cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithubSquare className="w-5 h-5" />
+            </a>
+          </Link>
         </div>
         <div className="mx-4 rounded-lg flex flex-wrap justify-center gap-2 p-4 text-white border-[1px] border-base-100 mb-4">
-          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-primary">
+          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-indigo-500">
             next.js
           </span>
-          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-primary">
+          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-indigo-500">
             node.js
           </span>
-          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-primary">
+          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-indigo-500">
             tailwindcss
           </span>
-          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-primary">
+          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-indigo-500">
             react.js
           </span>
-          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-primary">
+          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-indigo-500">
             postgresql
           </span>
-          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-primary">
+          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-indigo-500">
             mongodb
           </span>
-          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-primary">
+          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-indigo-500">
             typescript
           </span>
-          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-primary">
+          <span className="rounded-full bg-zinc-800 p-0.5 px-3 text-indigo-500">
             javascript
           </span>
         </div>

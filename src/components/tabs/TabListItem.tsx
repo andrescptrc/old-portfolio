@@ -8,7 +8,7 @@ const TabListItem = ({ text }: TabListItemProps) => {
       {({ selected }) => (
         <button
           className={classNames(
-            { 'bg-blue-500': selected },
+            { 'bg-indigo-500': selected },
             'font-bold bg-zinc-800 py-2 px-4 rounded-md text-white'
           )}
         >
