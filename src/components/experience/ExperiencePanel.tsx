@@ -7,7 +7,27 @@ const ExperiencePanel = () => {
       <div className="w-full">
         <h2 className="text-2xl font-bold mb-1">Experience</h2>
         <p className="text-accent mb-8">Where I&apos;ve Worked</p>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-0">
+          <div className="border-l-4 border-l-zinc-800 px-4 py-2 relative">
+            <div className="w-3 h-3 rounded-full bg-indigo-500 absolute top-[15px] -left-[8px]" />
+            <p className="text-indigo-500 font-semibold text-lg mb-1">
+              Front-end Developer -{' '}
+              <Link href="https://devsu.com/">
+                <a className="text-accent font-normal hover:underline">
+                  @Devsu
+                </a>
+              </Link>
+            </p>
+            <h3 className="mb-6 text-accent text-sm">Sep, 2022 - Present</h3>
+            <ul className="text-accent space-y-4 text-[15px]">
+              <li className='before:content-["▹"] before:text-indigo-500 before:absolute before:left-0 before:top-0 pl-6 relative'>
+                Development and maintenance of applications built with NextJs.
+              </li>
+              <li className='before:content-["▹"] before:text-indigo-500 before:absolute before:left-0 before:top-0 pl-6 relative'>
+                Refactoring and improvement of the app.
+              </li>
+            </ul>
+          </div>
           <div className="border-l-4 border-l-zinc-800 px-4 py-2 relative">
             <div className="w-3 h-3 rounded-full bg-indigo-500 absolute top-[15px] -left-[8px]" />
             <p className="text-indigo-500 font-semibold text-lg mb-1">
