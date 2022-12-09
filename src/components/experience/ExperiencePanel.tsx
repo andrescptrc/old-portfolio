@@ -38,7 +38,7 @@ const ExperiencePanel = () => {
                 </a>
               </Link>
             </p>
-            <h3 className="mb-6 text-accent text-sm">Dec, 2020 - Sep, 2022</h3>
+            <h3 className="mb-6 text-accent text-sm">May, 2021 - Sep, 2022</h3>
             <ul className="text-accent space-y-4 text-[15px]">
               <li className='before:content-["▹"] before:text-indigo-500 before:absolute before:left-0 before:top-0 pl-6 relative'>
                 Development and maintenance of applications built with NextJs.
