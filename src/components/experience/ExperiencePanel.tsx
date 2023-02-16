@@ -26,6 +26,16 @@ const ExperiencePanel = () => {
               <li className='before:content-["▹"] before:text-indigo-500 before:absolute before:left-0 before:top-0 pl-6 relative'>
                 Refactoring and improvement of the app.
               </li>
+              <li className='before:content-["▹"] before:text-indigo-500 before:absolute before:left-0 before:top-0 pl-6 relative'>
+                Integrate functionalities with services from Firebase, Algolia,
+                etc.
+              </li>
+              <li className='before:content-["▹"] before:text-indigo-500 before:absolute before:left-0 before:top-0 pl-6 relative'>
+                Integrate scrapping functionalities
+              </li>
+              <li className='before:content-["▹"] before:text-indigo-500 before:absolute before:left-0 before:top-0 pl-6 relative'>
+                Increase test coverage and apply TDD
+              </li>
             </ul>
           </div>
           <div className="border-l-4 border-l-zinc-800 px-4 py-2 relative">
