@@ -7,12 +7,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#7f5af0',
+        primary: '#4EBBF2',
         accent: '#94a1b2',
-        'base-100': '#242629'
+        'base-100': '#242629',
+        'special-blue': '#3F4B9E'
       },
       fontFamily: {
         display: ['Inter', 'sans-serif']
+      },
+      backgroundImage: {
+        'stars-pattern': "url('/space/stars-pattern.png')",
+        'planet-1-pattern': "url('/space/planet1-pattern.svg')"
       }
     }
   },
